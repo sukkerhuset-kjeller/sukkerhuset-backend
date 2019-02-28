@@ -1,6 +1,6 @@
 export default {
-  name: 'page',
-  title: 'Page',
+  name: 'quiz',
+  title: 'Quiz',
   type: 'document',
   fields: [
     {
@@ -30,14 +30,22 @@ export default {
       ]
     },
     {
-      name: 'body',
-      title: 'Body',
-      type: 'blockContent'
-    },
-    {
-      name: 'table',
-      title: 'Table',
-      type: 'table'
+      name: 'spreadsheet',
+      title: 'Spreadsheet',
+      desctiption: 'Data for the sheets table is fetched from a Google sheet',
+      type: 'object',
+      fields: [
+        {
+          name: 'sheetId',
+          title: 'Sheet ID',
+          type: 'string'
+        },
+        {
+          name: 'sheetName',
+          title: 'Sheet name',
+          type: 'string'
+        }
+      ]
     }
   ]
 }
