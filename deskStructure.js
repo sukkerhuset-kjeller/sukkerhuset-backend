@@ -3,7 +3,7 @@ import MdBusiness from 'react-icons/lib/md/business'
 import MdSettings from 'react-icons/lib/md/settings'
 import FaFileO from 'react-icons/lib/fa/file-o'
 
-const hiddenTypes = ['page', 'settings']
+const hiddenTypes = ['page', 'settings', 'quiz']
 
 export default () =>
   S.list()
@@ -11,29 +11,15 @@ export default () =>
         .items([
             S.listItem()
                 .title('Pages')
+                .schemaType('page')
+                .child(S.documentTypeList('page').title('Pages')),
+                S.listItem()
+                .title('Quiz')
                 .child(
-                S.list()
-                    .title('Pages')
-                    .items([
-                    S.listItem()
-                        .title('About')
-                        .child(
-                        S.editor()
-                            .id('aboutPage')
-                            .schemaType('page')
-                            .documentId('about')
-                        )
-                        .icon(FaFileO),
-                    S.listItem()
-                        .title('Contact')
-                        .child(
-                        S.editor()
-                            .id('contactPage')
-                            .schemaType('page')
-                            .documentId('contact')
-                        )
-                        .icon(FaFileO)
-                    ])
+                    S.editor()
+                    .id('quiz')
+                    .schemaType('quiz')
+                    .documentId('quiz')
                 ),
                 S.listItem()
                 .title('Settings')
