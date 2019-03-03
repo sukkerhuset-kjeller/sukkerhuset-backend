@@ -51,6 +51,33 @@ export default {
       options: {
         hotspot: true
       }
+    },
+    {
+      name: 'facebookAPI',
+      title: 'Facebook API',
+      type: 'object',
+      fields: [
+        {
+          name: 'appId',
+          title: 'App ID',
+          type: 'string'
+        },
+        {
+          name: 'appSecret',
+          title: 'App Secret',
+          type: 'string'
+        },
+        {
+          name: 'appIdDev',
+          title: 'App ID (Development)',
+          type: 'string'
+        },
+        {
+          name: 'appSecretDev',
+          title: 'App Secret (Development)',
+          type: 'string'
+        }
+      ]
     }
   ]
 }
