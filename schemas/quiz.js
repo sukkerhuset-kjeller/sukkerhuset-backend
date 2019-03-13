@@ -9,25 +9,13 @@ export default {
       type: 'string'
     },
     {
-      name: 'link',
-      title: 'Link',
-      type: 'object',
-      fields: [
-        {
-          name: 'slug',
-          title: 'Slug',
-          type: 'slug',
-          options: {
-            source: 'title',
-            maxLength: 96
-          }
-        },
-        {
-          name: 'icon',
-          title: 'Icon',
-          type: 'string'
-        }
-      ]
+      name: 'slug',
+      title: 'Slug',
+      type: 'slug',
+      options: {
+        source: 'title',
+        maxLength: 96
+      }
     },
     {
       name: 'spreadsheet',

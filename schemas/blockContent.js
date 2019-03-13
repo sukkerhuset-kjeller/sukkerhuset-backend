@@ -57,6 +57,18 @@ export default {
     {
       type: 'image',
       options: {hotspot: true}
+    },
+    {
+      name: 'table',
+      title: 'Table',
+      type: 'object',
+      fields: [
+        {
+          name: 'table',
+          title: 'Table',
+          type: 'table'
+        }
+      ]
     }
   ]
 }
