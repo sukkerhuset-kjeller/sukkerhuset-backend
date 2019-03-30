@@ -28,7 +28,9 @@ export default {
       type: 'code',
       options: {
         language: 'css',
-        theme: 'monokai'
+        theme: 'monokai',
+        collapsible: true,
+        collapsed: true
       }
     }
   ]
