@@ -78,6 +78,30 @@ export default {
           type: 'string'
         }
       ]
+    },
+    {
+      name: 'sponsors',
+      title: 'Sponsors',
+      type: 'array',
+      of: [
+        {
+          name: 'sponsor',
+          title: 'Sponsor',
+          type: 'object',
+          fields: [
+            {
+              name: 'name',
+              title: 'Name',
+              type: 'string'
+            },
+            {
+              name: 'logo',
+              title: 'Logo',
+              type: 'image'
+            }
+          ]
+        }
+      ]
     }
   ]
 }
