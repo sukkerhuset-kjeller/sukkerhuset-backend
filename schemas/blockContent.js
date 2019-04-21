@@ -61,14 +61,7 @@ export default {
     {
       name: 'table',
       title: 'Table',
-      type: 'object',
-      fields: [
-        {
-          name: 'table',
-          title: 'Table',
-          type: 'table'
-        }
-      ]
+      type: 'contenttable'
     }
   ]
 }

@@ -21,15 +21,6 @@ export default {
       name: 'body',
       title: 'Body',
       type: 'blockContent'
-    },
-    {
-      name: 'customStyle',
-      title: 'Custom Styling',
-      type: 'code',
-      options: {
-        language: 'css',
-        theme: 'monokai'
-      }
     }
   ]
 }
